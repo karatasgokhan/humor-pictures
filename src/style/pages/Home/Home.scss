@@ -1,0 +1,22 @@
+.cell-root {
+  .text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0 0 0;
+  }
+}
+
+.sc-dmRaPn {
+  .sc-fLlhyt {
+    display: flex !important;
+    overflow-x: hidden !important;
+    .rdt_TableHeadRow,
+    .rdt_TableRow {
+      border-bottom-width: 0 !important;
+      border-bottom-style: unset !important;
+      .rdt_TableCell {
+        padding: 2rem !important;
+      }
+    }
+  }
+}
