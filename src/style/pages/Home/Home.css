@@ -37,6 +37,10 @@
   margin: 0 0 1rem 0 !important;
   border-radius: 0.5rem !important;
 }
+.sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableHeadRow:hover,
+.sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableRow:hover {
+  background-color: #c2c2c2 !important;
+}
 .sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableHeadRow .rdt_TableCell,
 .sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableRow .rdt_TableCell {
   padding: 2rem !important;

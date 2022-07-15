@@ -35,6 +35,9 @@
         border-bottom-style: unset !important;
         margin: 0 0 1rem 0 !important;
         border-radius: 0.5rem !important;
+        &:hover {
+          background-color: #c2c2c2 !important;
+        }
         .rdt_TableCell {
           padding: 2rem !important;
         }
