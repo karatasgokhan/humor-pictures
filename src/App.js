@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./style/main.css";
 
 import Home from "./pages/Home";
-import PictureDetail from "./pages/PictureDetail";
 import NotFoundPage from "./pages/NotFoundPage";
 
 import Header from "./components/Header/Header";
@@ -26,7 +25,6 @@ function App() {
             </DefaultLayout>
           }
         />
-        <Route path={ROUTES.PICTUREDETAIL} element={<PictureDetail />} />
         <Route path={ROUTES.NOTFOUNDPAGE} element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>

@@ -6,14 +6,18 @@
   flex-direction: column;
   align-items: center;
 }
+
 .cell-root .img-item {
   max-width: 384px;
 }
+
 .cell-root .img-item img {
   width: 100%;
   height: 100%;
 }
+
 .cell-root .text {
+  text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
   margin: 1rem 0 0 0;
@@ -24,12 +28,15 @@
   overflow-x: hidden !important;
   margin: 2rem 0;
 }
+
 .sc-dmRaPn .sc-fLlhyt .rdt_Table {
   background-color: #f4f4f4 !important;
 }
+
 .sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableHead {
   display: none !important;
 }
+
 .sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableHeadRow,
 .sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableRow {
   border-bottom-width: 0 !important;
@@ -37,45 +44,15 @@
   margin: 0 0 1rem 0 !important;
   border-radius: 0.5rem !important;
 }
+
 .sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableHeadRow:hover,
 .sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableRow:hover {
   background-color: #c2c2c2 !important;
 }
+
 .sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableHeadRow .rdt_TableCell,
 .sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableRow .rdt_TableCell {
   padding: 2rem !important;
-}
-
-.picture-detail-root {
-  margin: 6rem 2rem 2rem 2rem;
-}
-.picture-detail-root .picture-detail-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  max-width: 1200px;
-  height: 100%;
-  margin: 0 auto;
-  background-color: #c2c2c2;
-  border-radius: 0.5rem;
-}
-.picture-detail-root .picture-detail-wrapper .text-item p {
-  font-weight: 700;
-  font-size: 2rem;
-  margin: 0 0 1rem 0;
-}
-.picture-detail-root .picture-detail-wrapper .img-item img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.picture-detail-wrapper,
-.img-item,
-img {
-  width: 100%;
-  height: 100%;
 }
 
 .not-found-root {
@@ -83,6 +60,7 @@ img {
   align-items: center;
   justify-content: center;
 }
+
 .not-found-root .not-found-wrapper {
   display: flex;
   flex-direction: column;
@@ -90,29 +68,36 @@ img {
   justify-content: center;
   margin: 5rem 2.5rem;
 }
+
 .not-found-root .not-found-wrapper .not-found-text-block {
   margin: 0 0 1.5rem 0;
 }
+
 .not-found-root .not-found-wrapper .not-found-text-block h2 {
   font-size: 1.8rem;
 }
+
 .not-found-root .not-found-wrapper .not-found-button-block {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .not-found-root .not-found-wrapper .not-found-button-block a {
   font-weight: 500;
   font-size: 1.5rem;
   color: #01b4e4;
 }
+
 .not-found-root .not-found-wrapper .not-found-button-block a:hover {
   opacity: 0.7;
 }
+
 .not-found-root .not-found-wrapper .not-found-button-block svg {
   font-size: 1.5rem;
   margin: 0 0 1rem 0;
 }
+
 .not-found-root .not-found-wrapper .not-found-button-block svg path {
   fill: #01b4e4;
 }
@@ -130,15 +115,18 @@ img {
   z-index: 2;
   transition: top 0.2s linear;
 }
+
 .header-root.header-remove {
   top: -4rem;
 }
+
 .header-root .header-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
+
 .header-root .header-wrapper .header-container {
   display: flex;
   align-items: center;
@@ -147,17 +135,19 @@ img {
   max-width: 1300px;
   position: relative;
 }
+
 .header-root .header-wrapper .header-container .logo-item {
   width: 50px;
   height: 50px;
   margin: 0;
 }
+
 .header-root .header-wrapper .header-container .logo-item img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
+
 .header-root .header-wrapper .header-container h3 {
   color: #fff;
 }
@@ -165,6 +155,7 @@ img {
 .default-layout-root {
   margin: 4rem 0 0 0;
 }
+
 .default-layout-root .default-layout-wrapper {
   max-width: 576px;
   margin: 0 auto;
@@ -172,4 +163,4 @@ img {
 
 :root {
   --lightBlue: 1, 180, 228;
-}/*# sourceMappingURL=main.css.map */
+}
