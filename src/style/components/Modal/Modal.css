@@ -11,7 +11,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .lb-root .lb-block {
   background-color: #ffffff;
   max-width: 1467px;
@@ -19,7 +18,6 @@
   width: 100%;
   height: 100%;
 }
-
 .lb-root .lb-block .head-item {
   display: flex;
   align-items: center;
@@ -27,7 +25,6 @@
   background: #000000;
   padding: 1rem;
 }
-
 .lb-root .lb-block .head-item .close-item {
   cursor: pointer;
   width: 28px;
@@ -36,15 +33,12 @@
   align-items: center;
   justify-content: center;
 }
-
 .lb-root .lb-block .head-item .close-item svg path {
   fill: #3c4249;
 }
-
 .lb-root .lb-block .head-item .close-item:hover {
   transform: scale(1.1);
 }
-
 .lb-root .lb-block .head-item .close-item:hover svg path {
   fill: #fff;
-}
+}/*# sourceMappingURL=Modal.css.map */
