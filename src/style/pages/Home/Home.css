@@ -1,3 +1,18 @@
+.cell-root {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cell-root .img-item {
+  max-width: 384px;
+}
+.cell-root .img-item img {
+  width: 100%;
+  height: 100%;
+}
 .cell-root .text {
   font-size: 1.5rem;
   font-weight: 600;
@@ -7,13 +22,22 @@
 .sc-dmRaPn .sc-fLlhyt {
   display: flex !important;
   overflow-x: hidden !important;
+  margin: 2rem 0;
 }
-.sc-dmRaPn .sc-fLlhyt .rdt_TableHeadRow,
-.sc-dmRaPn .sc-fLlhyt .rdt_TableRow {
+.sc-dmRaPn .sc-fLlhyt .rdt_Table {
+  background-color: #f4f4f4 !important;
+}
+.sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableHead {
+  display: none !important;
+}
+.sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableHeadRow,
+.sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableRow {
   border-bottom-width: 0 !important;
   border-bottom-style: unset !important;
+  margin: 0 0 1rem 0 !important;
+  border-radius: 0.5rem !important;
 }
-.sc-dmRaPn .sc-fLlhyt .rdt_TableHeadRow .rdt_TableCell,
-.sc-dmRaPn .sc-fLlhyt .rdt_TableRow .rdt_TableCell {
+.sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableHeadRow .rdt_TableCell,
+.sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableRow .rdt_TableCell {
   padding: 2rem !important;
 }/*# sourceMappingURL=Home.css.map */

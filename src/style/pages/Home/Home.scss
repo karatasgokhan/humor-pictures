@@ -1,4 +1,17 @@
 .cell-root {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .img-item {
+    max-width: 384px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
   .text {
     font-size: 1.5rem;
     font-weight: 600;
@@ -10,12 +23,21 @@
   .sc-fLlhyt {
     display: flex !important;
     overflow-x: hidden !important;
-    .rdt_TableHeadRow,
-    .rdt_TableRow {
-      border-bottom-width: 0 !important;
-      border-bottom-style: unset !important;
-      .rdt_TableCell {
-        padding: 2rem !important;
+    margin: 2rem 0;
+    .rdt_Table {
+      background-color: #f4f4f4 !important;
+      .rdt_TableHead {
+        display: none !important;
+      }
+      .rdt_TableHeadRow,
+      .rdt_TableRow {
+        border-bottom-width: 0 !important;
+        border-bottom-style: unset !important;
+        margin: 0 0 1rem 0 !important;
+        border-radius: 0.5rem !important;
+        .rdt_TableCell {
+          padding: 2rem !important;
+        }
       }
     }
   }
