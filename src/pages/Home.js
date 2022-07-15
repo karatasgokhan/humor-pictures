@@ -17,13 +17,11 @@ export default function Home() {
     {
       name: "",
       cell: (row) => (
-        <div className="cell-root">
+        <div className="cell-root" onClick={() => onClick(row.id)}>
           <div className="img-item">
             <img src={row.url} alt={row.id} />
           </div>
-          <p className="text" onClick={() => onClick(row.id)}>
-            {row.name}
-          </p>
+          <p className="text">{row.name}</p>
         </div>
       ),
     },
@@ -34,6 +32,10 @@ export default function Home() {
   };
 
   return (
-    <DataTable columns={columns} data={data.data.memes} highlightOnHover />
+    <DataTable
+      columns={columns}
+      data={data?.data?.memes ? data?.data?.memes : []}
+      highlightOnHover
+    />
   );
 }
