@@ -26,15 +26,16 @@ export default function Header() {
       window.removeEventListener("scroll", handleNavigation);
     };
   }, [handleNavigation]);
+
   return (
     <header ref={headerRoot} className="header-root">
       <div className="header-wrapper">
         <div className="header-container">
           <NavLink to={ROUTES.HOME} className="logo-item">
-            <img src="/assets/img/logo.png" alt="Header Logo" />
+            <img src="/assets/img/logo.svg" alt="Header Logo" />
           </NavLink>
           <div className="text-item">
-            <h3>Humor Picture</h3>
+            <h3>Mizah Resimleri</h3>
           </div>
         </div>
       </div>
