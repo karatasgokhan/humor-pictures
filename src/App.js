@@ -26,14 +26,7 @@ function App() {
             </DefaultLayout>
           }
         />
-        <Route
-          path={ROUTES.PICTUREDETAIL}
-          element={
-            <DefaultLayout>
-              <PictureDetail />
-            </DefaultLayout>
-          }
-        />
+        <Route path={ROUTES.PICTUREDETAIL} element={<PictureDetail />} />
         <Route
           path={ROUTES.NOTFOUNDPAGE}
           element={
