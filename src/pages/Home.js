@@ -1,32 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import DataTable from "react-data-table-component";
 
+import { useGetPicturesApiQuery } from "../store/apis/HumorPicturesApi";
+
 import * as ROUTES from "../constants/routePath";
 
 export default function Home() {
-  const [data, setData] = useState([]);
   const navigate = useNavigate();
-
-  const getData = () => {
-    fetch("data/data.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then(function (response) {
-        console.log(response);
-        return response.json();
-      })
-      .then(function (myJson) {
-        setData(myJson.data.memes);
-      });
-  };
-  useEffect(() => {
-    getData();
-  }, []);
+  const { data } = useGetPicturesApiQuery({
+    refetchOnMountOrArgChange: true,
+  });
 
   const columns = [
     {
@@ -49,6 +34,6 @@ export default function Home() {
   };
 
   return (
-    <DataTable columns={columns} data={data ? data : []} highlightOnHover />
+    <DataTable columns={columns} data={data.data.memes} highlightOnHover />
   );
 }
