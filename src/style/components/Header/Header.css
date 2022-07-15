@@ -1,0 +1,30 @@
+.header-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(var(--lightBlue), 1);
+  height: 4rem;
+  width: 100%;
+  z-index: 2;
+  transition: top 0.2s linear;
+}
+.header-root.header-remove {
+  top: -4rem;
+}
+.header-root .header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.header-root .header-wrapper .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1300px;
+  position: relative;
+}/*# sourceMappingURL=Header.css.map */
