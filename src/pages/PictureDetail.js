@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 import { useGetPicturesApiQuery } from "../store/apis/HumorPicturesApi";
@@ -12,6 +12,10 @@ export default function PictureDetail() {
     data?.data?.memes &&
     data?.data?.memes?.filter((f) => f?.id === id)[0] &&
     data?.data?.memes?.filter((f) => f?.id === id)[0];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="picture-detail-root">
