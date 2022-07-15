@@ -1,7 +1,12 @@
+.not-found-root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .not-found-root .not-found-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   margin: 5rem 2.5rem;
 }
@@ -14,7 +19,7 @@
 .not-found-root .not-found-wrapper .not-found-button-block {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 .not-found-root .not-found-wrapper .not-found-button-block a {
   font-weight: 500;

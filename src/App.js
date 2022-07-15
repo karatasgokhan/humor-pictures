@@ -27,14 +27,7 @@ function App() {
           }
         />
         <Route path={ROUTES.PICTUREDETAIL} element={<PictureDetail />} />
-        <Route
-          path={ROUTES.NOTFOUNDPAGE}
-          element={
-            <DefaultLayout>
-              <NotFoundPage />
-            </DefaultLayout>
-          }
-        />
+        <Route path={ROUTES.NOTFOUNDPAGE} element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   );
