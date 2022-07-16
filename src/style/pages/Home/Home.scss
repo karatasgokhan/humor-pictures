@@ -1,48 +1,60 @@
-.cell-root {
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
+.table-root {
+  margin: 6rem 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  .img-item {
-    max-width: 384px;
-    img {
+  justify-content: center;
+  padding: 0;
+  .cell-root {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    margin: 0 0 1rem 0;
+    padding: 1rem 1.5rem;
+    .cell-wrapper {
       width: 100%;
       height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .img-item {
+        max-width: 384px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .text-item {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 1rem 0 0 0;
+        p {
+          margin: 0;
+        }
+      }
     }
-  }
-  .text {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 1rem 0 0 0;
+    &:hover {
+      background-color: #c2c2c2;
+    }
   }
 }
 
-.sc-dmRaPn {
-  .sc-fLlhyt {
-    display: flex !important;
-    overflow-x: hidden !important;
-    margin: 2rem 0;
-    .rdt_Table {
-      background-color: #f4f4f4 !important;
-      .rdt_TableHead {
-        display: none !important;
-      }
-      .rdt_TableHeadRow,
-      .rdt_TableRow {
-        border-bottom-width: 0 !important;
-        border-bottom-style: unset !important;
-        margin: 0 0 1rem 0 !important;
-        border-radius: 0.5rem !important;
-        &:hover {
-          background-color: #c2c2c2 !important;
-        }
-        .rdt_TableCell {
-          padding: 2rem !important;
-        }
-      }
+.scroll-item {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  svg {
+    font-size: 2.5rem;
+    path {
+      fill: #01b4e4;
     }
   }
 }

@@ -1,48 +1,60 @@
-.cell-root {
+.table-root {
+  margin: 6rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.table-root .cell-root {
   cursor: pointer;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  margin: 0 0 1rem 0;
+  padding: 1rem 1.5rem;
 }
-.cell-root .img-item {
+.table-root .cell-root .cell-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.table-root .cell-root .cell-wrapper .img-item {
   max-width: 384px;
 }
-.cell-root .img-item img {
+.table-root .cell-root .cell-wrapper .img-item img {
   width: 100%;
   height: 100%;
 }
-.cell-root .text {
+.table-root .cell-root .cell-wrapper .text-item {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
   margin: 1rem 0 0 0;
 }
+.table-root .cell-root .cell-wrapper .text-item p {
+  margin: 0;
+}
+.table-root .cell-root:hover {
+  background-color: #c2c2c2;
+}
 
-.sc-dmRaPn .sc-fLlhyt {
-  display: flex !important;
-  overflow-x: hidden !important;
-  margin: 2rem 0;
+.scroll-item {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
 }
-.sc-dmRaPn .sc-fLlhyt .rdt_Table {
-  background-color: #f4f4f4 !important;
+.scroll-item svg {
+  font-size: 2.5rem;
 }
-.sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableHead {
-  display: none !important;
-}
-.sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableHeadRow,
-.sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableRow {
-  border-bottom-width: 0 !important;
-  border-bottom-style: unset !important;
-  margin: 0 0 1rem 0 !important;
-  border-radius: 0.5rem !important;
-}
-.sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableHeadRow:hover,
-.sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableRow:hover {
-  background-color: #c2c2c2 !important;
-}
-.sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableHeadRow .rdt_TableCell,
-.sc-dmRaPn .sc-fLlhyt .rdt_Table .rdt_TableRow .rdt_TableCell {
-  padding: 2rem !important;
+.scroll-item svg path {
+  fill: #01b4e4;
 }/*# sourceMappingURL=Home.css.map */
