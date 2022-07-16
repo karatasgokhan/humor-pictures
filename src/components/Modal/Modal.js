@@ -11,7 +11,7 @@ export default function Modal(props) {
           <div className="close-item">
             <FontAwesomeIcon
               icon={faXmark}
-              onClick={() => props.setOpenModal(false)}
+              onClick={() => props.setIsOpen(false)}
             />
           </div>
         </div>
