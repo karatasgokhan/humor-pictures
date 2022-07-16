@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "../components/Modal/Modal";
 
 import useInfiniteScroll from "../helper/useInfiniteScroll";
@@ -13,7 +13,7 @@ export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const [cellIndex, setCellIndex] = useState(-1);
 
-  const { data } = useGetPicturesApiQuery({
+  const { data } = useGetPicturesApiQuery(" ", {
     refetchOnMountOrArgChange: true,
   });
 
@@ -22,17 +22,21 @@ export default function Home() {
   const [isFetching, setIsFetching] = useInfiniteScroll(fetchMoreListItems);
 
   const [listItems, setListItems] = useState(
-    data?.data?.memes.slice(0, halfDataLength)
+    data?.data?.memes?.slice(0, halfDataLength)
   );
 
+  useEffect(() => {
+    setListItems(data?.data?.memes?.slice(0, halfDataLength));
+  }, [data?.data?.memes]);
+
   function fetchMoreListItems() {
-    if (listItems.length >= data?.data?.memes?.length) {
+    if (listItems?.length >= data?.data?.memes?.length) {
       setIsFetching(false);
     } else {
       setTimeout(() => {
         setListItems((prevState) => [
           ...prevState,
-          ...data?.data?.memes.slice(halfDataLength, allDataLength),
+          ...data?.data?.memes?.slice(halfDataLength, allDataLength),
         ]);
         setIsFetching(false);
       }, 2000);
@@ -42,7 +46,7 @@ export default function Home() {
   return (
     <>
       <ul className="table-root">
-        {listItems.map((listItem, index) => (
+        {listItems?.map((listItem, index) => (
           <div
             key={index}
             className="cell-root"
